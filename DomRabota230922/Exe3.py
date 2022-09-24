@@ -1,3 +1,25 @@
+def inputNumbers(x):
+    xyz = ["X", "Y", "Z"]
+    a = []
+    for i in range(x):
+        a.append(input(f"Введите значение {xyz[i]}: "))
+    return a
+
+
+def checkPredicate(x):
+    left = not (x[0] or x[1] or x[2])
+    right = not x[0] and not x[1] and not x[2]
+    result = left == right
+    return result
+
+
+statement = inputNumbers(3)
+
+if checkPredicate(statement) == True:
+    print(f"Утверждение истинно")
+else:
+    print(f"Утверждение ложно")
+
 # Напишите программу, которая принимает на вход координаты точки (X и Y), причём X ≠ 0 и Y ≠ 0 и выдаёт номер четверти плоскости, в которой находится эта точка (или на какой оси она находится).
 
 # Пример:
@@ -16,12 +38,12 @@
 # elif n == '4 четверть':
 #     print('x > 0 и y < 0')
 
-x1 = int(input())
-y1 = int(input())
-x2 = int(input())
-y2 = int(input())
-m = ((x2-x1)**2+(y2-y1)**2)**0.5
-print(round(m, 2))
+# x1 = int(input())
+# y1 = int(input())
+# x2 = int(input())
+# y2 = int(input())
+# m = ((x2-x1)**2+(y2-y1)**2)**0.5
+# print(round(m, 2))
 
 
 
