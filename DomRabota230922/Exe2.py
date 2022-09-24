@@ -5,7 +5,7 @@ y = int(input("Введите число Y: "))
 z = int(input("Введите число Z: "))
 
 left_side = not(x and y and z)
-right_side = not x1 or not y1 or not z1
+right_side = not x or not y or not z
 
 if left_side == right_side:
     print(f"Верно!")
